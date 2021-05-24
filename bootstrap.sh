@@ -1,6 +1,6 @@
 #!/bin/bash
 apt update && apt upgrade
-apt -y install apache2 git
+apt -y install apache2 git stress-ng
 cd /etc/apache2/sites-available/
 curl -O https://raw.githubusercontent.com/oykot/bao/main/000-default.conf
 systemctl restart apache2
