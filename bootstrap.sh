@@ -1,6 +1,5 @@
-apt update
-apt upgrade
-apt -y install apache2
-cat <<EOF > /var/www/html/index.html
-<html><body><h1>$HOSTNAME</h1></body></html>
-EOF
+#!/bin/bash
+apt update && apt upgrade
+apt -y install apache2 git
+cd /var/www/html/
+git clone https://github.com/oykot/bao.git
