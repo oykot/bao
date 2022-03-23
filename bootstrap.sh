@@ -5,7 +5,7 @@ curl -O https://raw.githubusercontent.com/oykot/bao/main/000-default.conf
 systemctl restart apache2
 cd /var/www/html/
 mkdir /var/www/html/bao/
-git clone https://github.com/oykot/bao.git
+# git clone https://github.com/oykot/bao.git
 cat <<EOF > /var/www/html/bao/index.html
 <html><body><h1>$HOSTNAME</h1></body></html>
 <html><body><h1>v2 de mon app</h1></body></html>
