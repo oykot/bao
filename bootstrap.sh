@@ -1,4 +1,5 @@
 #!/bin/bash
+apt -y update
 apt -y install apache2 git stress-ng atop
 cd /etc/apache2/sites-available/
 curl -O https://raw.githubusercontent.com/oykot/bao/main/000-default.conf
@@ -11,5 +12,4 @@ cat <<EOF > /var/www/html/bao/index.html
 <html><body><h1>La v3 de mon app</h1></body></html>
 <img src="https://storage.googleapis.com/storedata-load-balance-web-flow/logo_SdV.png">
 EOF
-apt -y update
-apt -y upgrade
+# apt -y upgrade
