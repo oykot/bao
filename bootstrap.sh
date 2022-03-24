@@ -10,6 +10,6 @@ mkdir /var/www/html/bao/
 cat <<EOF > /var/www/html/bao/index.html
 <html><body><h1>$HOSTNAME</h1></body></html>
 <html><body><h1>La v4 de mon app</h1></body></html>
-<img src="https://storage.googleapis.com/storedata-projet-web-345015/chaos-monkey-2.png">
+<img src="https://storage.cloud.google.com/storedata-load-balance-web-flow/logo_SdV.png">
 EOF
 # apt -y upgrade
